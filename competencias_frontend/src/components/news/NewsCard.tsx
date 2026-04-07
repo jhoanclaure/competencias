@@ -1,0 +1,29 @@
+import type { News } from "../../types/news.types";
+import "./NewsCard.css";
+
+interface Props {
+  news: News;
+}
+
+const NewsCard = ({ news }: Props) => {
+  return (
+    <article className="news-card">
+      <div className="news-image">
+        {news.imageUrl && (
+          <img src={news.imageUrl} 
+          alt={news.title}
+          onError={(e) => {
+            e.currentTarget.style.display = "none";
+          }} 
+      />
+        )}
+      </div>
+
+      <h3 className="news-title">{news.title}</h3>
+      <p className="news-description">{news.content}</p>
+      <div className="news-divider" />
+    </article>
+  );
+};
+
+export default NewsCard;

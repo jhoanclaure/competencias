@@ -1,0 +1,89 @@
+.create-modal {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.close-btn {
+  position: absolute;
+  right: 1.5rem;
+  top: 1rem;
+  background: transparent;
+  border: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.title-input {
+  background: #ddd;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1rem;
+  outline: none;
+  color: black; /* <-- Agrega esta línea */
+}
+
+.body-textarea {
+  background: #ddd;
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+  min-height: 150px;
+  resize: none;
+  outline: none;
+  color: black; /* <-- Agrega esta línea */
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.upload-box {
+  width: 90px;
+  height: 90px;
+  background: #ddd;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload-icon {
+  font-size: 40px;
+  color: #555;
+}
+
+.add-box {
+  width: 90px;
+  height: 90px;
+  background: #ddd;
+  border-radius: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.publish-btn {
+  margin-left: auto;
+  background: #2d8cf0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  outline: none;
+}
+.publish-btn:focus,
+.publish-btn:active,
+.publish-btn:focus-visible {
+  outline: none;
+  box-shadow: none; /* Por si Vite o el navegador está usando una sombra en lugar de un borde */
+  border: none;
+}
